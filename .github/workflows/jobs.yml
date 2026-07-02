@@ -23,10 +23,5 @@ jobs:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
 
-      - name: Commit seen jobs
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-          git add seen_jobs.json
-          git commit -m "update seen jobs" || echo "no changes"
-          git push
+      
+        
