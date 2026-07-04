@@ -11,13 +11,6 @@ response = requests.get(
 
 jobs = response.json()
 
-keywords = [
-    "ai",
-    "llm",
-    "machine learning",
-    "nlp",
-    "deep learning"
-]
 
 for job in jobs:
 
